@@ -1,10 +1,13 @@
 # プロジェクト名 [スエマス新潟]
-URL (準備中)
-<br>テストアカウント e-mail: test@test.com, password: test
+githubリポジトリ: https://github.com/masapon06/rails_suemasu
+アプリURL: (準備中)
+<br>テストアカウント e-mail: test@guest.test, password: test
 
-## 開発環境
+## 環境
 ### 開発環境
-Ruby/Ruby on Rails/SQLite/AWS/Visual Studio Code
+Ruby/Ruby on Rails/SQLite/Visual Studio Code
+### 本番環境
+Ruby/Ruby on Rails/MySQL/AWS(EC2)/Amazon Linux
 ### 開発期間と平均作業時間
 開発期間：約1週間
 <br>1日あたりの平均作業時間：約10時間
@@ -17,24 +20,24 @@ Ruby/Ruby on Rails/SQLite/AWS/Visual Studio Code
 - 良かったお店には、コメントすることもできます。
 - 加熱タバコのみ可能・紙タバコOK・完全個室などのタグで検索することができます。（実装中）
 
-## 制作背景(意図)
+## 制作背景
 私は昨年の夏から、ノーコードツールを用いてアプリケーション製作を行っていました。知り合いの方が、「新潟駅周辺でタバコが吸えるお店がどこかわからない」と言っているのを聞き、その方のために、タバコを吸えるお店を一覧表示したかんたんなアプリを製作しました。facebookやコミュニティで宣伝したところ、そのアプリは、100人ほどのユーザーの方に使っていただき、「場所がわかる地図を表示してほしい」や、「個室があるかどうかわかる機能がほしい、などのフィードバックを得ることができました。2月半ばにそのプロトタイプへのフィードバックをもとに、フルスタック開発したのがこのアプリです。新潟県でのコロナ増加を受け製作を中止しましたが、もっとUIを整え、さらにタグ検索できる機能を実装する予定です。
 
-## DEMO
-- トップページ
-<img width="600" alt="top" src="">
+## デモ
+- 店舗詳細ページ①
+<img width="600" alt="show" src="(https://user-images.githubusercontent.com/78773789/116800611-c6b46d00-ab3d-11eb-869e-b32e83191b13.png">
 
-- グループ一覧ページ
-<img width="600" alt="index" src="">
+- 店舗詳細ページ②
+<img width="600" alt="chat" src="https://user-images.githubusercontent.com/78773789/116800650-0b400880-ab3e-11eb-8bf5-0b120f70c4ff.png">
 
-- グループ詳細ページ
-<img width="600" alt="show" src="">
+- 店舗詳細ページ③(コメント欄)
+<img width="600" alt="top" src="https://user-images.githubusercontent.com/78773789/116800677-42161e80-ab3e-11eb-810d-fc9e8794c607.png">
 
-- グループチャットページ
-<img width="600" alt="chat" src="">
+- 店舗一覧ページ
+<img width="600" alt="index" src="https://user-images.githubusercontent.com/78773789/116800684-51956780-ab3e-11eb-8aa6-84af1edea090.png">
 
 ## 今後実装予定の内容
 - タグ検索機能
 - 地図検索機能
 - お気に入り機能
-- サイトの見た目の向上 / UXの向上# portfolio
+- サイトの見た目の向上 / UXの向上
