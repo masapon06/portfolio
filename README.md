@@ -9,10 +9,10 @@
 私がエンジニアとして行ってきたプロジェクトを以下に記述します。
 <br>
 - [①ウェブアプリ「スエマス新潟」開発](#ウェブアプリスエマス新潟)
-- [②社内音声チャットツール開発](#ウェブアプリスエマス新潟)
-- [③APIによるMVP開発](#ウェブアプリスエマス新潟)
+- [②社内音声チャットツール開発](#プロジェクト-音声チャットツール)
+- [③LINE/Slack APIを連携させたアプリケーション](#-line-api--slack-apiを用いたアプリケーション)
 
-## ①ウェブアプリ「スエマス新潟」
+# ①ウェブアプリ「スエマス新潟」
 githubリポジトリ: https://github.com/masapon06/rails_suemasu
 <br>アプリURL: (準備中)
 <br>テストアカウント e-mail: test@guest.test, password: test
@@ -39,7 +39,7 @@ Ruby/Ruby on Rails/MySQL/AWS(EC2)/Amazon Linux
 <br>詳細: https://github.com/masapon06/rails_suemasu
 
 
-プロジェクト② 音声チャットツール
+# プロジェクト② 音声チャットツール
 
 githubリポジトリ: 公開設定をprivateにしています。
 
@@ -47,10 +47,10 @@ githubリポジトリ: 公開設定をprivateにしています。
 
 ## 環境
 ### 使用技術
-WebRTC/Node.js/Express/React/Redis/PostgresSQL/Docker/Docker-Compose/traefik
+WebRTC / Node.js / Express / React / Redis / PostgresSQL / Docker / Docker-Compose / traefik
 
 ### 本番環境
-Node.js/Express/React/Redis/PostgresSQL/Docker/Docker-compose/AWS EC2/Amazon Linux 2
+Node.js / Express / React / Redis / PostgresSQL / Docker / Docker-compose / AWS EC2 / Amazon Linux 2
 
 ## アプリ概要
 Clubhouseのように、気軽に話したり聞いたりできるラジオのようなチャットツールです。Clubhouseとは違ってウェブアプリのためiOS, Android, PC問わず使うことが可能です。
@@ -62,7 +62,7 @@ Clubhouseのように、気軽に話したり聞いたりできるラジオの�
 - 誰でも、トーク用の部屋を作成することが可能です。(部屋を作成すると独自のURLが発行されます。)
 
 ## 背景
-インターン先で、「クラブハウスのような音声チャットを社内ツールとして開発してほしい」との依頼がありました。そこで、音声チャットができるOSSにいくつかの機能を追加して社内用ツールにカスタマイズしたのが本アプリケーションです。リリース後、「誰が部屋に入ってきたかわからないから入室前に自分の名前を入力できるようにしてほしい」「リアクション用のスタンプを追加してほしい」といった要望があったため、それらの機能を追加しました。音声が聞こえないなどの不具合があったため、サーバーをモニタリングして対応しました。
+インターン先で、「クラブハウスのような音声チャットを社内ツールとして開発してほしい」との依頼がありました。そこで、音声チャットができるOSSにいくつかの機能を追加して社内用ツールにカスタマイズしたのが本アプリケーションです。リリース後、「誰が部屋に入ってきたかわからないから入室前に自分の名前を入力できるようにしてほしい」「リアクション用のスタンプを追加してほしい」といった要望があったため、それらの機能を追加しました。また、音声が聞こえないという不具合に対してサーバーをモニタリングして対応しました。
 
 ## デモ(一部)
 - 入室前プロフィール入力モーダル
@@ -77,7 +77,7 @@ Clubhouseのように、気軽に話したり聞いたりできるラジオの�
 <br>詳細: https://demo.jamtest.tk
 
 
-## ③ LINE API / Slack APIを用いたアプリケーション
+# ③ LINE API / Slack APIを用いたアプリケーション
 
 ## 開発環境
 ### 開発環境
@@ -100,13 +100,13 @@ Google Apps Script / LINE Official Account Manager / LINE Messenger API / Slack 
 同じ大学の後輩が、「高校生の野球ノートがとてもアナログで不便なので、もっと便利に記録できるアプリをつくってほしい」という依頼をしてきました。そこで開発にとりかかったのがこのアプリです。部員の手間と監督の手間をより軽減できるような仕組みで、かつミニマムに、という方針で開発しました。使用する技術やツールは、つくってはフィードバックをもらうという往復の結果、LINEとSlackのGoogle Apps Scriptでの連携に落ち着きました。Googleスプレッドシートをデータベース的に使用してSlack, LINE間の紐付けやメッセージデータの蓄積を行っています。サーバーを立てずに安価にアプリを構築できるGoogle Apps Scriptで実装しました。
 
 ## デモ
-- LINEでの入力 / LINEの入力をSlackへ転送
+- ↓LINEでの入力 / LINEの入力をSlackへ転送
 <img width="600" alt="top" src="https://user-images.githubusercontent.com/78773789/116805685-fcb81800-ab62-11eb-8e0d-b279b532510c.png">
 
-- LINEで選択式入力
-<img width="600" alt="index" src="https://user-images.githubusercontent.com/78773789/116805530-19078500-ab62-11eb-9206-215e702995d1.jpg">
+- ↓LINEで選択式入力
+<img width="600" alt="index" src="https://user-images.githubusercontent.com/78773789/116806176-4e15d680-ab66-11eb-942d-02fe5badbf9e.png">
 
-- Slackの投稿をLINEへ転送
+- ↓Slackの投稿をLINEへ転送
 <img width="600" alt="show" src="https://user-images.githubusercontent.com/78773789/116805744-718b5200-ab63-11eb-8cbd-919ae4e38082.png">
 
 ## 今後実装予定の内容
