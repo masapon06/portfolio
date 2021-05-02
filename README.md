@@ -25,13 +25,13 @@ Ruby/Ruby on Rails/MySQL/AWS(EC2)/Amazon Linux
 
 ## デモ
 - 店舗詳細ページ①
-<img width="600" alt="show" src="(https://user-images.githubusercontent.com/78773789/116800611-c6b46d00-ab3d-11eb-869e-b32e83191b13.png">
+<img width="600" alt="show_1" src="https://user-images.githubusercontent.com/78773789/116800763-f9ab3080-ab3e-11eb-82e2-fb7a8bb2e974.png">
 
 - 店舗詳細ページ②
-<img width="600" alt="chat" src="https://user-images.githubusercontent.com/78773789/116800650-0b400880-ab3e-11eb-8bf5-0b120f70c4ff.png">
+<img width="600" alt="show_2" src="https://user-images.githubusercontent.com/78773789/116800650-0b400880-ab3e-11eb-8bf5-0b120f70c4ff.png">
 
 - 店舗詳細ページ③(コメント欄)
-<img width="600" alt="top" src="https://user-images.githubusercontent.com/78773789/116800677-42161e80-ab3e-11eb-810d-fc9e8794c607.png">
+<img width="600" alt="post" src="https://user-images.githubusercontent.com/78773789/116800677-42161e80-ab3e-11eb-810d-fc9e8794c607.png">
 
 - 店舗一覧ページ
 <img width="600" alt="index" src="https://user-images.githubusercontent.com/78773789/116800684-51956780-ab3e-11eb-8aa6-84af1edea090.png">
