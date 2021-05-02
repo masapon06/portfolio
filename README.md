@@ -104,7 +104,7 @@ Google Apps Script / LINE Official Account Manager / LINE Messenger API / Slack 
 <img width="600" alt="top" src="https://user-images.githubusercontent.com/78773789/116805685-fcb81800-ab62-11eb-8e0d-b279b532510c.png">
 
 - ↓LINEで選択式入力
-<img width="600" alt="index" src="https://user-images.githubusercontent.com/78773789/116806176-4e15d680-ab66-11eb-942d-02fe5badbf9e.png">
+<img width="600" alt="index" src="https://user-images.githubusercontent.com/78773789/116806260-c54b6a80-ab66-11eb-93e4-f3686f921cf3.png">
 
 - ↓Slackの投稿をLINEへ転送
 <img width="600" alt="show" src="https://user-images.githubusercontent.com/78773789/116805744-718b5200-ab63-11eb-8cbd-919ae4e38082.png">
