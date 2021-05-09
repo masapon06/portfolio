@@ -43,7 +43,7 @@ Ruby/Ruby on Rails/MySQL/AWS(EC2)/Amazon Linux
 
 githubリポジトリ: 公開設定をprivateにしています。
 
-<br>デモURL: http://test.jamtest.tk
+<br>デモURL: 非公開
 
 ## 環境
 ### 使用技術
@@ -66,15 +66,14 @@ Clubhouseのように、気軽に話したり聞いたりできるラジオの�
 
 ## デモ(一部)
 - 入室前プロフィール入力モーダル
-<img width="600" alt="profile" src="">
+<img width="600" alt="profile" src="https://user-images.githubusercontent.com/78773789/117564895-64cda780-b0e9-11eb-865b-189c1c672df9.png">
+<img width="600" alt="profile" src="https://user-images.githubusercontent.com/78773789/117564866-3223af00-b0e9-11eb-99e0-acfbc4796826.png">
 
 - トークルームページ
-<img width="600" alt="talkroom" src="">
+<img width="600" alt="talkroom" src="https://user-images.githubusercontent.com/78773789/117564968-e8879400-b0e9-11eb-8e49-fe313c6a5672.png">
 
 - ルーム設定モーダル
-<img width="600" alt="setting" src="">
-
-<br>詳細: https://demo.jamtest.tk
+<img width="600" alt="setting" src="https://user-images.githubusercontent.com/78773789/117564986-01904500-b0ea-11eb-9523-786cdbcc7ae9.png">
 
 
 # 開発物③ LINE API / Slack APIを用いたアプリケーション
