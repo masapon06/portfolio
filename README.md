@@ -10,7 +10,7 @@
 <br>
 - [開発物①ウェブアプリ「スエマス新潟」開発](#開発物-ウェブアプリスエマス新潟)
 - [開発物②社内音声チャットツール開発](#開発物-音声チャットツール)
-- [開発物③LINE/Slack APIを連携させたアプリケーション](#開発物-line-api--slack-apiを用いたアプリケーション)
+- [開発物③LINE/Slack APIを連携させたアプリケーション](#開発物-PWA新潟トイレマップ)
 
 # 開発物① ウェブアプリ「スエマス新潟」
 githubリポジトリ: https://github.com/masapon06/rails_suemasu
@@ -76,38 +76,31 @@ Clubhouseのように、気軽に話したり聞いたりできるラジオの�
 <img width="600" alt="setting" src="https://user-images.githubusercontent.com/78773789/117564986-01904500-b0ea-11eb-9523-786cdbcc7ae9.png">
 
 
-# 開発物③ LINE API / Slack APIを用いたアプリケーション
+# 開発物③ PWA「新潟トイレマップ」
+詳細: https://github.com/masapon06/toilet-map
 
-## 開発環境
-### 開発環境
-Google Apps Script / LINE Official Account Manager / LINE Messenger API / Slack Incoming Webhook
-
+## 環境
+### 本番環境
+Node.js/React.js/AWS EC2/Route53/Nginx
 ### 開発期間と平均作業時間
-開発期間：約1ヶ月
-<br>1日あたりの平均作業時間：約2時間
+開発期間：約1週間
+<br>1日あたりの平均作業時間：約7時間
 
 ## アプリ概要
-部員が監督に提出するノートでのやりとりを、より便利な形にするためのアプリです。部員がLINE公式アカウントに入力した内容が、部活Slackに投稿されます。一方で、監督がSlackにコメントした内容が、対象の部員に公式LINEを通して通知されます。部員はLINEだけで練習ノートが完結し、監督はSlackだけで練習ノートが完結します。
+「ベビーカーや車椅子で外出したとき、トイレがない。」「使いたいのに目の前のトイレが混んでいる。」そんなとき、広いトイレを素早く探すことができるのが本アプリケーションです。スマホのホーム画面に追加してお使いください。
 
 ### 特徴
-- 公式LINEのリッチメニューを押すと、練習ノートの記録がはじまります。
-- 練習ノートの記録が始まると、部員は、公式botが送ってくるメッセージに返信するだけでノートを記録できます。
-- 記録した内容は、公式Slackの部員のプライベートチャンネルに転送されます。
-- 監督が、転送されてきた内容に対してコメントすると、そのプライベートチャンネルの部員に、LINE botからpush通知が行きます。
+- 現在地近辺にあるベビーカーや車椅子で使用できるトイレを気軽に検索することができます。
+- マップ画面からは目的地周辺にトイレが有るかどうか検索することが可能です
+- マップ画面のピンをクリックすると描画されるトイレ名や、リスト画面のトイレ名をクリックするとマップアプリに遷移し、行き方がわかります
+- トイレがない地域を赤色の円で確認することができます(実装予定)
 
-## 制作背景(意図)
-同じ大学の後輩が、「高校生の野球ノートがとてもアナログで不便なので、もっと便利に記録できるアプリをつくってほしい」という依頼をしてきました。そこで開発にとりかかったのがこのアプリです。部員の手間と監督の手間をより軽減できるような仕組みで、かつミニマムに、という方針で開発しました。使用する技術やツールは、つくってはフィードバックをもらうという往復の結果、LINEとSlackのGoogle Apps Scriptでの連携に落ち着きました。Googleスプレッドシートをデータベース的に使用してSlack, LINE間の紐付けやメッセージデータの蓄積を行っています。サーバーを立てずに安価にアプリを構築できるGoogle Apps Scriptで実装しました。
+## デモ(一部)
+- ファーストビュー画面
+<img width="250" alt="about" src="https://user-images.githubusercontent.com/78773789/119251351-13411480-bbe1-11eb-8380-2185f07e85e7.PNG">
 
-## デモ
-- ↓LINEでの入力 / LINEの入力をSlackへ転送
-<img width="600" alt="top" src="https://user-images.githubusercontent.com/78773789/116805685-fcb81800-ab62-11eb-8e0d-b279b532510c.png">
+- 目的地マップ画面
+<img width="250" alt="purpose-site-map" src="https://user-images.githubusercontent.com/78773789/119251159-f9530200-bbdf-11eb-9a4e-015e8d09fa67.PNG">
 
-- ↓LINEで選択式入力
-<img width="600" alt="index" src="https://user-images.githubusercontent.com/78773789/116806260-c54b6a80-ab66-11eb-93e4-f3686f921cf3.png">
+詳細: https://github.com/masapon06/toilet-map
 
-- ↓Slackの投稿をLINEへ転送
-<img width="600" alt="show" src="https://user-images.githubusercontent.com/78773789/116805744-718b5200-ab63-11eb-8cbd-919ae4e38082.png">
-
-## 今後実装予定の内容
-- LINEで今までの入力を確認できるコマンド
-- 溜まったメッセージのデータを分析できる機能
