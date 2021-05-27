@@ -77,7 +77,8 @@ Clubhouseのように、気軽に話したり聞いたりできるラジオの�
 
 
 # 開発物③ PWA「新潟トイレマップ」
-詳細: https://github.com/masapon06/toilet-map
+詳細: https://github.com/masapon07/toilet-map
+アプリURL: http://sugano-dev.jamtest.tk
 
 ## 環境
 ### 本番環境
