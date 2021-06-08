@@ -105,3 +105,34 @@ Node.js/React.js/AWS EC2/Route53/Nginx
 
 詳細: https://github.com/masapon06/toilet-map
 
+# 開発物④ LINE API / Slack APIを用いたアプリケーション
+
+## 開発環境
+### 開発環境
+Google Apps Script / LINE Official Account Manager / LINE Messenger API / Slack Incoming Webhook
+
+### 開発期間と平均作業時間
+開発期間：約1ヶ月
+<br>1日あたりの平均作業時間：約2時間
+
+## アプリ概要
+部員が監督に提出するノートでのやりとりを、より便利な形にするためのアプリです。部員がLINE公式アカウントに入力した内容が、部活Slackに投稿されます。一方で、監督がSlackにコメントした内容が、対象の部員に公式LINEを通して通知されます。部員はLINEだけで練習ノートが完結し、監督はSlackだけで練習ノートが完結します。
+
+- 公式LINEのリッチメニューを押すと、練習ノートの記録がはじまります。
+- 練習ノートの記録が始まると、部員は、公式botが送ってくるメッセージに返信するだけでノートを記録できます。
+- 記録した内容は、公式Slackの部員のプライベートチャンネルに転送されます。
+- 監督が、転送されてきた内容に対してコメントすると、そのプライベートチャンネルの部員に、LINE botからpush通知が行きます。
+## 制作背景(意図)
+同じ大学の後輩が、「高校生の野球ノートがとてもアナログで不便なので、もっと便利に記録できるアプリをつくってほしい」という依頼をしてきました。そこで開発にとりかかったのがこのアプリです。部員の手間と監督の手間をより軽減できるような仕組みで、かつミニマムに、という方針で開発しました。使用する技術やツールは、つくってはフィードバックをもらうという往復の結果、LINEとSlackのGoogle Apps Scriptでの連携に落ち着きました。Googleスプレッドシートをデータベース的に使用してSlack, LINE間の紐付けやメッセージデータの蓄積を行っています。サーバーを立てずに安価にアプリを構築できるGoogle Apps Scriptで実装しました。
+## デモ
+- ↓LINEでの入力 / LINEの入力をSlackへ転送
+<img width="600" alt="top" src="https://user-images.githubusercontent.com/78773789/116805685-fcb81800-ab62-11eb-8e0d-b279b532510c.png">
+- ↓LINEで選択式入力
+<img width="600" alt="index" src="https://user-images.githubusercontent.com/78773789/116806260-c54b6a80-ab66-11eb-93e4-f3686f921cf3.png">
+- ↓Slackの投稿をLINEへ転送
+<img width="600" alt="show" src="https://user-images.githubusercontent.com/78773789/116805744-718b5200-ab63-11eb-8cbd-919ae4e38082.png">
+
+## 今後実装予定の内容
+- LINEで今までの入力を確認できるコマンド
+- 溜まったメッセージのデータを分析できる機能
+
